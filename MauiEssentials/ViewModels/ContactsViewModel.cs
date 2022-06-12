@@ -1,17 +1,13 @@
-using System;
 using System.Collections.ObjectModel;
-using System.Threading.Tasks;
 using System.Windows.Input;
-using Microsoft.Maui;
-using Microsoft.Maui.Controls;
 
 
-using ContactsManager = Microsoft.Maui.Essentials.Contacts;
+using ContactsManager = Microsoft.Maui.ApplicationModel.Communication.Contacts;
 
 
 namespace Samples.ViewModel
 {
-	class ContactsViewModel : BaseViewModel
+    class ContactsViewModel : BaseViewModel
 	{
 		ObservableCollection<Contact> contactsList = new ObservableCollection<Contact>();
 		Contact selectedContact;
